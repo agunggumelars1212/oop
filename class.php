@@ -1,39 +1,24 @@
 <?php
-// 1.class adalah sebuah blueprint/template
-//untuk membuatinstance dari object
-//2.class mendefisikan object
-//3.class menyimpan data(property)
-//dan prilaku (method)
-
-//membuat class dengan nama kucing
-
-// class kucing 
-// {
-    //membuat property
-    // public $warna = "Coklat";
-    // public $jml_kaki = 4;
-    // public $mkn_nav = "Sagung";
-
-    //membuat method dengan nama bersuara()
-//     public function bersuara()
-//     {
-//         return "miaww";
-//     }
-// }
-//membuat objek baru
-//ditandai dengan keyword new
-// $kucing1 = new kucing();
-// $kucing->$warna="orange";
-// echo "Warna kucing :$warna";
-// echo $kucing -> bersuara();
-
-class Perumahan
+class Produk
 {
-    public $blok;
-    public $nomor_rumah;
-
-    public function pemilik(){
-        return "Alamat saya di komplek kopo indah Blok " .this -> $blok. "nomor".
-    }
+   var $merk;
+   var $jumlah;
+   var $nama;
+   public function hidupkan()
+   {
+      return 'Hidupkan';
+   }
 }
+$ujang = new Produk();
+$hp2 = new Produk;
+echo "<br>";
+// var_dump($hp2);
+$hp->merk = "Vivo";
+$hp->jumlah = 2;
+$hp->nama = "Vivo Y17";
+var_dump($ujang);
+// echo "Nama Produk : $hp->nama<br>";
+// echo "Merk Handphone : $hp->merk<br>";
+// echo "Jumlah Produk : $hp->jumlah<br>";
+// echo $hp->hidupkan() . " Handphone";
 ?>
